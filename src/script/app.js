@@ -5,12 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const text = document.getElementById("p");
-const characters = text.innerText.split("");
 
-text.innerHTML = characters.map((char, i) => {
-  return `<span style=" transform: rotate(${i * 5}deg)">${char}</span>`;
-}).join(""); 
 
 
 // ===> FALLING STARS ANIMATION <===
