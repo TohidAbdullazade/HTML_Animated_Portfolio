@@ -980,3 +980,25 @@ footer a:not(#first):hover {
 footer #first {
     color: #9747FF;
 }
+
+.mouse {
+    background-color: red;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+.circle {
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(179, 182, 185, 0.1);
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}

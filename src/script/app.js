@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
 // ===> FALLING STARS ANIMATION <===
 const fallingStart = () => {
   const span = document.createElement("span");
@@ -40,4 +37,10 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.body.removeChild(div);
   }, 1200);
+});
+
+let circle = document.querySelector(".circle");
+document.addEventListener("mousemove", (e) => {
+  circle.style.top = e.pageY + "px";
+  circle.style.left = e.pageX + "px";
 });
